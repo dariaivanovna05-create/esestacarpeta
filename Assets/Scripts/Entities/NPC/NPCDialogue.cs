@@ -5,18 +5,18 @@ public class NPCDialogue : MonoBehaviour
 {
     [SerializeField] List<string> Dialogo;
     [SerializeField] NPCDialogueUI DialogueUI;
-    [SerializeField] Quests Cegarro;
+    [SerializeField] Quests Pelea;
     public void Hablar()
     {
         DialogueUI.TextoVisible(Dialogo);
-        DialogueUI.OnFinish += IniciarMisionCegarro;
+        DialogueUI.OnFinish += IniciarMisionPelea;
         Debug.Log("Hablando con NPC");
     }
 
-    public void IniciarMisionCegarro()
+    public void IniciarMisionPelea()
     {
-        Cegarro.StartQuest();
-        DialogueUI.OnFinish -= IniciarMisionCegarro;
+        Pelea.StartQuest();
+        DialogueUI.OnFinish -= IniciarMisionPelea;
         Debug.Log("Iniciar mision");
     }
 
