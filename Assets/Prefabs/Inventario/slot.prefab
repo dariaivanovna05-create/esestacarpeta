@@ -113,3 +113,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caa47684b95828047a4a38cd57892a19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SlotInventario
+  image: {fileID: 434047099232052419}
+  selected: {r: 1, g: 0, b: 0, a: 0.5686275}
+  notselected: {r: 1, g: 1, b: 1, a: 1}

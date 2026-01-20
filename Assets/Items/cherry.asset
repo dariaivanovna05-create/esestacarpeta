@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 56e4f43a089c4c14a89ee20fba7a611b, type: 3}
-  m_Name: Cuadrado
+  m_Name: cherry
   m_EditorClassIdentifier: Assembly-CSharp::Item
-  image: {fileID: 1055577325, guid: cd0b8890fd943ec42b39ec4e5fa041c1, type: 3}
+  image: {fileID: 1979398198, guid: cd0b8890fd943ec42b39ec4e5fa041c1, type: 3}
   stackable: 1
   type: 0
   actionType: 0
