@@ -4,13 +4,11 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Tilemaps;
 
-
 [CreateAssetMenu(menuName = "Item")]
 public class Item : ScriptableObject
 {
 
     [Header("Gameplay")]
-    public TileBase tile;
     public ItemType type;
     public ActionType actionType;
     public Vector2Int range = new Vector2Int(5, 4);

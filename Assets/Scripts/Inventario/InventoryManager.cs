@@ -24,6 +24,18 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
+    public Item GetSelectedItem()
+    {
+        SlotInventario slot = slotInventarios[selectedSlot];
+        ItemInventario itemInSlot = slot.GetComponentInChildren<ItemInventario>();
+        if (itemInSlot != null)
+        {
+            return itemInSlot.item;
+        }
+
+        return null;
+    }
+
     void ChangeSlot(int newValue)
     {
         if(selectedSlot >= 0)
@@ -41,7 +53,7 @@ public class InventoryManager : MonoBehaviour
             SlotInventario slot = slotInventarios[i];
             ItemInventario itemInSlot = slot.GetComponentInChildren<ItemInventario>();
 
-            if (itemInSlot = null)
+            if (itemInSlot == null)
             {
                 SpawnNewItem(item, slot);
                 return true;

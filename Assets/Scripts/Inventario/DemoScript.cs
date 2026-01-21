@@ -11,12 +11,26 @@ public class DemoScript : MonoBehaviour
 
         if (result == true)
         {
-            Debug.Log("itemadded");
+            Debug.Log("item añadido :D yay");
+        }
+
+        else if (result == false)
+        {
+            Debug.Log("NOOOOOOOOOO");
         }
 
         else
         {
-            Debug.Log("NOOOOOOOOOO");
+            Debug.Log("huh...");
+        }
+    }
+
+    public void GetSelectedItem() 
+    { 
+        Item recievedItem = inventoryManager.GetSelectedItem();
+        if (recievedItem != null)
+        {
+            Debug.Log("No hay item!!!");
         }
     }
 }

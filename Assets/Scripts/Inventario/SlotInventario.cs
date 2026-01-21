@@ -7,11 +7,6 @@ public class SlotInventario : MonoBehaviour, IDropHandler
     public Image image;
     public Color selected, notselected;
 
-    private void wake()
-    {
-        Deselect();
-    }
-
     public void Select()
     {
         image.color = selected;

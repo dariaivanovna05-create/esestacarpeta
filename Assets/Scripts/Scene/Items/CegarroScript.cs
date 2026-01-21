@@ -8,16 +8,9 @@ public class CegarroScript : MonoBehaviour
         if (collision.CompareTag("Player") && CegarroQuest.questProgress == Quests.QuestProgress.inProgress ) 
         {
            CegarroQuest.IncrementCounter();
+
            Destroy(gameObject);
         }
     }
-    void Start()
-    {
-        
-    }
 
-    void Update()
-    {
-        
-    }
 }
