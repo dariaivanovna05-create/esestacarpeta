@@ -56,11 +56,8 @@ public class Daño : MonoBehaviour
 
         else if (Tipo == "R")
         {
-
+          
         }
     }
-            private void OnMouseDown()
-            {
-                DestruirEnemigo();
-            }
+
 }
